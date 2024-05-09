@@ -63,7 +63,7 @@ const ChatBot = () => {
             </div>
             {showRecommendedMessages && (
                 <RecommendedMessages
-                    messages={["What size roaster should I get?", "What's starter for?", "Can you make and order for me?"]}
+                    messages={["What size roaster should I get?", "What's starter for?", "Can you make an order for me?"]}
                     onMessageClick={handleRecommendedMessageClick}
                 />
             )}
