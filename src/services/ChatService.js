@@ -1,10 +1,27 @@
+var convId = null;
 const ChatService = {
     sendMessage: async (message) => {
-        // Simulate sending message to backend service with a 2-second delay
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        var postBody = {
+            message: message
+        }
 
-        // Return a simulated response from the backend service
-        return 'How ya goin, mate?';
+        if (convId) {
+            postBody.conv_id = convId;
+        }
+
+        const response = await fetch('https://ovtuu968q1.execute-api.us-east-2.amazonaws.com/v1/ssd-chatbot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(postBody)
+        });
+
+        const responseBody = await response.json();
+
+        convId = responseBody.conv_id;
+
+        return responseBody.response;
     }
 };
 

@@ -44,20 +44,22 @@
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 0px;
-  padding: 10px 15px;
+  padding: 14px 15px;
   border-radius: 15px;
   max-width: 70%;
   background-color: #858585;
+  word-wrap: break-word; 
 }
 
 .bot-message {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 0px;
-  padding: 10px 15px;
+  padding: 0px 15px;
   border-radius: 15px;
   max-width: 70%;
   background-color: #dbdbdb;
+  word-wrap: break-word; 
 }
 
 .recommended-messages {
