@@ -13,7 +13,7 @@ const ChatBot = () => {
 
     useEffect(() => {
         // Display initial message from the chatbot
-        setMessages([{ text: "Hello, how can I help you?", isUser: false }]);
+        setMessages([{ text: "Hello, how can I help you? 😊", isUser: false }]);
     }, []);
 
     useEffect(() => {
