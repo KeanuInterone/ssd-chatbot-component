@@ -17,7 +17,7 @@ const ChatBot = () => {
     }, []);
 
     useEffect(() => {
-        scrollToBottom();
+        //scrollToBottom();
     }, [messages]);
 
     const scrollToBottom = () => {
